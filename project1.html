@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Event Registration</title>
+    
+</head>
+<body>
+    <h1>Mit Campus Events</h1>
+    
+    <div class="event">
+        <fieldset><h2>Workshop on Web Development</h2>
+            <p>Date: November 25, 2023</p>
+            <p>Time: 6:00 PM - 8:00 PM</p>
+            <p>Description: Join us for a hands-on web development workshop.</p>
+        
+        
+        
+        <details>
+            <summary>
+                    Register and Explore the world of web dev!
+            </summary>
+
+            <form>
+
+                <br>
+
+                <label for="name">Name :</label>
+                <input type="text" id="name">
+
+                <br/>
+                <br/>
+
+                <label for="reg">Phone No: :</label>
+                <input type="number" id="reg">
+
+                <br/>
+                <br/>
+
+                <label for="id">Learner Id :</label>
+                <input type="text" id="id">
+
+                <br><br>
+
+                <label for="year">Year :</label>
+                <input type="number" id="year" min="1" max="4">
+
+                <br/>
+                <br/>
+
+                <fieldset>
+                    <legend>Choose known things :</legend>
+                  
+                    <div>
+                      <input type="checkbox" id="html" name="html"/>
+                      <label for="html">HTML</label>
+                    </div>
+                  
+                    <div>
+                      <input type="checkbox" id="css" name="css" />
+                      <label for="css">CSS</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="Java Script" id="js">
+                        <label for="js">Java Script</label>
+                    </div>
+                  </fieldset>
+
+                 <br>
+                 <br>
+
+                 <button onclick="registerForEvent('Workshop on Web Development')">Register</button>
+                 
+
+            </form>
+
+        </details>
+        
+           
+    </div>
+</fieldset> 
+<br><br>
+
+    <div class="event">
+        <fieldset>
+        <h2>Mit Dance Competition</h2>
+        <p>Date: November 30, 2023</p>
+        <p>Time: 1:00 PM - 7:00 PM</p>
+        <p>Description: 
+            "An electrifying showcase of diverse dance styles, where talent, creativity, 
+            and passion converge on the stage in a thrilling competition."</p>
+        
+        
+
+        <details>
+            <summary>
+                Register and book the slot for audition!
+            </summary>
+
+            <form>
+
+                <br>
+
+                <label for="name">Name :</label>
+                <input type="text" id="name">
+
+                <br/>
+                <br/>
+
+                <label for="reg">Phone No: :</label>
+                <input type="number" id="reg">
+
+                <br/>
+                <br/>
+
+                <label for="id">Learner Id :</label>
+                <input type="text" id="id">
+
+                <br><br>
+
+                <label for="year">Year :</label>
+                <input type="number" id="year" min="1" max="4">
+
+                <br/>
+                <br/>
+
+                <fieldset>
+                    <legend>select date for audition :</legend>
+                  
+                    <div>
+                      <input type="radio" id="trial1" name="trial1"/>
+                      <label for="trial1">10 November</label>
+                    </div>
+                  
+                    <div>
+                        <input type="radio" id="trial2" name="trial2"/>
+                        <label for="trial2">11 November</label>
+                      </div>
+
+                      <div>
+                        <input type="radio" id="trial3" name="trial3"/>
+                        <label for="trial3">12 November</label>
+                      </div>
+                  </fieldset>
+
+                 <br>
+                 <br>
+
+                 <button onclick="registerForEvent('Mit Dance Competition')">Register</button>
+                 
+
+            </form>
+
+        </details>
+    </div>
+
+</fieldset>
+
+    <script>
+        function registerForEvent(eventName) {
+            alert('You are registered for ' + eventName);
+        }
+    </script>
+
+    
+</body>
+</html>
